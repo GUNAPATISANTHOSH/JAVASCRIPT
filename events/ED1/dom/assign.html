@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Table</title>
+</head>
+<body>
+    <table border="1" id="empTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <script src="assign.js"></script>
+    <script>
+        let tbody = document.getElementById("tableBody");
+        for(let employee of emp){
+            let row = `
+                <tr>
+                    <td>${employee.id}</td>
+                    <td>${employee.first_name}</td>
+                    <td>${employee.salary}</td>
+                </tr>
+            `;
+            tbody.innerHTML += row;
+        }
+    </script>
+</body>
+</html>

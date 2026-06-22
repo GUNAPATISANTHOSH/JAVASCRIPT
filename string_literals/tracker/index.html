@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+
+    <div class="hero-left">
+        <h1>Expense Tracker</h1>
+        <p id="currentDate"></p>
+    </div>
+
+    <div class="hero-right">
+        <span>SPENT TODAY</span>
+        <h2>₹<span id="todayExpense">0</span></h2>
+    </div>
+
+</div>
+
+    
+
+    <!-- Month Selector -->
+    <div class="month-selector">
+
+        <label>Select Month:</label>
+
+        <input
+            type="month"
+            id="selectedMonth"
+        >
+
+    </div>
+
+    <!-- Expense Form -->
+    <div class="form-container">
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Enter Amount"
+        >
+
+        <select id="category"></select>
+
+        <input
+            type="text"
+            id="description"
+            placeholder="Enter Description"
+        >
+
+        <input
+            type="date"
+            id="date"
+        >
+
+        <button id="addBtn">
+            Add Expense
+        </button>
+
+    </div>
+
+    <!-- Monthly Budget -->
+    <div class="budget-container">
+
+        <input
+            type="number"
+            id="budgetInput"
+            placeholder="Enter Budget For Selected Month"
+        >
+
+        <button id="saveBudgetBtn">
+            Save Monthly Budget
+        </button>
+
+    </div>
+
+    <!-- Monthly Summary -->
+    <div class="budget-cards">
+
+        <div class="card">
+            <h3>Monthly Budget</h3>
+            <p>₹<span id="budget">0</span></p>
+        </div>
+
+        <div class="card">
+            <h3>Spent</h3>
+            <p>₹<span id="spent">0</span></p>
+        </div>
+
+        <div class="card">
+            <h3>Remaining</h3>
+            <p>₹<span id="remaining">0</span></p>
+        </div>
+
+    </div>
+
+    <!-- Analytics -->
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Total Expense</h3>
+            <p>₹<span id="total">0</span></p>
+        </div>
+
+        <div class="card">
+            <h3>Total Entries</h3>
+            <p><span id="entries">0</span></p>
+        </div>
+
+        <div class="card">
+            <h3>Highest Expense</h3>
+            <p>₹<span id="highestExpense">0</span></p>
+        </div>
+
+    </div>
+
+    <!-- Search -->
+    <input
+        type="text"
+        id="search"
+        placeholder="Search description..."
+    >
+
+    <!-- Date Filters -->
+    <div class="date-filter">
+
+        <input
+            type="date"
+            id="startDate"
+        >
+
+        <input
+            type="date"
+            id="endDate"
+        >
+
+        <button id="clearFilter">
+            Clear Filter
+        </button>
+
+    </div>
+
+    <!-- Sorting -->
+    <div class="sort-container">
+
+        <select id="sortOption">
+            <option value="default">
+                Sort By
+            </option>
+
+            <option value="amountAsc">
+                Amount Low → High
+            </option>
+
+            <option value="amountDesc">
+                Amount High → Low
+            </option>
+
+            <option value="dateAsc">
+                Date Old → New
+            </option>
+
+            <option value="dateDesc">
+                Date New → Old
+            </option>
+        </select>
+
+    </div>
+
+    <!-- Expense Table -->
+    <table>
+
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="expenseList">
+
+        </tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

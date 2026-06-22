@@ -1,0 +1,29 @@
+1-let , const
+2.class
+3.()=>{}
+4.array new methods 
+        [] .map() - data transformation
+        [].filter() - data selection   
+        .foreach - data processing
+        .find - verify the element present in data
+        .reduce
+5 ... (triple dot operator)
+	1.spread
+	2.rest
+6.import /export
+7.asynchronous-
+	1 call back
+	2 Promise
+	3 async ,await
+8.desturucting
+	[]
+	{}
+9.${} string literal
+10 closures
+11 set,map
+what is 	
+---------------------------------------------------------
+|	let 	   	|var				|
+|	Global		|block/function			|
+|redeclaration possible	|redeclaration not possible	|
+---------------------------------------------------------		

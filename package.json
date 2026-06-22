@@ -1,0 +1,26 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "\"# santhoshtej\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santhoshtej/js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/santhoshtej/js/issues"
+  },
+  "homepage": "https://github.com/santhoshtej/js#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "js": "^0.1.0"
+  },
+  "devDependencies": {}
+}

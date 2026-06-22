@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title1">Python</h1>
+    <div id="box"></div>
+    <h1 id="title">Welcome</h1>
+    <button onclick="change()">click me</button>
+</body>
+<script>
+    let h=document.getElementById("title1")
+    h.innerText="javascript"
+    console.log(h)
+    let b=document.getElementById("box")
+    b.innerHTML="<h1>DOM Practice</h1>"
+    console.log(b)
+    function change(){
+        let a=document.getElementById("title")
+        a.innerText="welcome"
+        a.style.color="red";
+        a.style.backgroundColor="yellow";
+        a.style.fontSize="40px"
+        a.style.textAlign="center";
+        a.style.border = "2px solid black";
+    }
+</script>
+</html>

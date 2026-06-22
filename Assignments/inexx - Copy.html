@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disable Right Click</title>
+</head>
+<body>
+
+<h1>My Website</h1>
+
+<script>
+document.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+    alert("Right click is detected.");
+});
+</script>
+
+</body>
+</html>

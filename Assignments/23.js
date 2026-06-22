@@ -1,0 +1,4 @@
+let prices = [199, 129, 98, 78, 11, 171, 1055]; 
+for (let i=0;i<prices.length;i++){
+    console.log(i,prices[i]*10)
+}
